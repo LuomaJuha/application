@@ -24,6 +24,16 @@ return [
                     ],
                 ],
             ],
+            'bingo' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/bingo',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'bingo',
+                    ],
+                ],
+            ],
             'application' => [
                 'type'    => Segment::class,
                 'options' => [
